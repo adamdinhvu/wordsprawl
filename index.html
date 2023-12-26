@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordsprawl</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        background-color: whitesmoke;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      #letter-list {
+        width: min(100%,600px);
+        margin-inline: auto;
+      }
+
+      #word-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+
+      #score {
+        background-color: whitesmoke;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      #game {
+        width: 100vw;
+        height: 69vh;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-rYE7Vuqm.js"></script>
+  </head>
+  <body>
+    <div id="game"></div>
+    
+    <div class="container">
+      <div id="score">
+        
+        <h2 id="points"></h2>
+        <h1 id="word"></h1>
+        
+        <ul id="word-list"></ul>
+      </div>
+    </div>
+
+    <div id="letter-list"></div>
+
+  </body>
+</html>
